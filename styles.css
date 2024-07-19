@@ -22,8 +22,8 @@ body {
 .container {
     max-width: 100rem;
     padding: 1rem auto;
-    margin: auto;
-    display: flexbox;
+    margin: 0 auto;
+    display: flex;
     justify-items:center
 }
 
@@ -35,7 +35,7 @@ body {
 
 .profile-image img {
     border-radius: 100%;
-    border: 10px solid green;
+    border: 1rem solid mediumseagreen;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
@@ -45,25 +45,42 @@ body {
 .profile-user-settings {
     display: flex;
     align-content: center;
-    gap: 3rem;
+    margin-bottom: 3rem;
 }
 
 .btn {
     font-size: 2rem;
     background: none;
-    padding: 0;
-    justify-content: flex-start;
     cursor: pointer;
 }
-
+/*boder top/bot marg wont change*/
 .profile-edit-btn {
     padding: 0 2rem;
     margin-left: 2rem;
     align-items: center;
-    display: flex
-
 }
 
 .profile-settings-btn {
-    border: none
+    border: none;
 }
+
+.btn:active {
+    outline: 1rem auto mediumseagreen;
+}
+
+.profile-stats ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.profile-bio {
+    flex-wrap: nowrap;
+}
+
+.profile-user-settings,
+.profile-stats,
+.profile-bio {
+    padding: 1rem;
+}
+
