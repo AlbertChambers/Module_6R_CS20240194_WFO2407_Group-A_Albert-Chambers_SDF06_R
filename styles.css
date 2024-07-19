@@ -1,5 +1,4 @@
 /* Base Styles */
-
 :root {
     font-size: 10px;
 }
@@ -11,13 +10,60 @@
 }
 
 body {
-    font-family: "Open Sans", Arial, sans-serif;
+    margin: 10rem;
+    font-size: 2rem;
+    font-family: "Open Sans, Arial, sans-serif";
     min-height: 100vh;
     background-color: #fafafa;
     color: #262626;
     padding-bottom: 3rem;
 }
 
-img {
-    display: block;
+.container {
+    max-width: 100rem;
+    padding: 1rem auto;
+    margin: auto;
+    display: flexbox;
+    justify-items:center
+}
+
+.profile-image {
+    float: left;
+    background-size: cover;
+    margin-right: 3rem;
+}
+
+.profile-image img {
+    border-radius: 100%;
+    border: 10px solid green;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.profile-user-settings {
+    display: flex;
+    align-content: center;
+    gap: 3rem;
+}
+
+.btn {
+    font-size: 2rem;
+    background: none;
+    padding: 0;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.profile-edit-btn {
+    padding: 0 2rem;
+    margin-left: 2rem;
+    align-items: center;
+    display: flex
+
+}
+
+.profile-settings-btn {
+    border: none
 }
