@@ -55,6 +55,7 @@ body {
     background: none;
     cursor: pointer;
 }
+
 /*boder top/bot marg wont change*/
 .profile-edit-btn {
     padding: 0 2rem;
@@ -93,19 +94,16 @@ body {
 }
 
 /*img gallery start*/
-
-
-
 .gallery {
-    margin: -1rem -1rem;
+    margin: 1rem 1rem;
     border: 1px solid black;
     height: 100%;
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(3, 30rem);
+    grid-template-rows: repeat(2, 30rem);
     justify-content: center;
-    width: 50vw;
+    /*width: 50vw;*/
 }
 
 .gallery-item {
@@ -113,8 +111,7 @@ body {
 }
 
 .gallery-image {
-    width: 10rem;
-    height: 10rem;
+    width: 20rem;
+    height: 20rem;
     object-fit: cover;
-    position: relative;
 }
