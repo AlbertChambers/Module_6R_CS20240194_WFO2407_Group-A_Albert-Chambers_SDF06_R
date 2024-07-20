@@ -22,8 +22,6 @@ body {
 .container {
     max-width: 100vw;
     flex-grow: 1;
-    padding: 1rem auto;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
@@ -46,14 +44,18 @@ body {
 
 .profile-user-settings {
     display: flex;
-    align-content: center;
     margin-bottom: 3rem;
+    border-style: solid;
 }
 
 .btn {
     font-size: 2rem;
     background: none;
     cursor: pointer;
+}
+
+.btn:active {
+    outline: 1rem auto mediumseagreen;
 }
 
 /*boder top/bot marg wont change*/
@@ -65,10 +67,6 @@ body {
 
 .profile-settings-btn {
     border: none;
-}
-
-.btn:active {
-    outline: 1rem auto mediumseagreen;
 }
 
 .profile-stats ul {
@@ -94,12 +92,13 @@ body {
 }
 
 /*img gallery start*/
+/*scrolling problem*/
 .gallery {
     margin: 1rem 1rem;
     border: 1px solid black;
-    height: 100%;
+    height: 150vh;
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 0.5rem;
     grid-template-columns: repeat(3, 30rem);
     grid-template-rows: repeat(2, 30rem);
     justify-content: center;
@@ -115,14 +114,18 @@ body {
     width: 20rem;
     height: 20rem;
     object-fit: cover;
+    position: absolute;
 }
 /*
 .gallery-image img {
 }
 */
+
 .gallery-item-info li {
     display: inline-block;
     font-size: 2rem;
+    position: relative;
+    border-style: solid;
 }
 
 .visually-hidden {
@@ -132,8 +135,5 @@ body {
 .gallery-item-likes {
     margin-inline-end: 2rem;
 }
-/*
-.gallery-item-likes,
-.gallery-item-comments {
-}
-*/
+
+
