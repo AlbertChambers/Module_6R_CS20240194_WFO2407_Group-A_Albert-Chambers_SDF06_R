@@ -107,7 +107,8 @@ body {
 }
 
 .gallery-item {
-    align-self: center;
+    justify-self: center;
+    margin: 1rem;
 }
 
 .gallery-image {
@@ -115,3 +116,24 @@ body {
     height: 20rem;
     object-fit: cover;
 }
+/*
+.gallery-image img {
+}
+*/
+.gallery-item-info li {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.gallery-item-likes {
+    margin-inline-end: 2rem;
+}
+/*
+.gallery-item-likes,
+.gallery-item-comments {
+}
+*/
