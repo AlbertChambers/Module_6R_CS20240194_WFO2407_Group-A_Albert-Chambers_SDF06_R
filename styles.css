@@ -95,8 +95,8 @@ body {
 /*scrolling problem*/
 .gallery {
     margin: 1rem 1rem;
-    border: 1px solid black;
-    height: 150vh;
+    border: 1rem solid black;
+    height: 125rem;
     display: grid;
     grid-gap: 0.5rem;
     grid-template-columns: repeat(3, 30rem);
