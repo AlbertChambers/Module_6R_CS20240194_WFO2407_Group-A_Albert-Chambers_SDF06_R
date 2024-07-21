@@ -1,4 +1,5 @@
 /* Base Styles */
+
 :root {
     font-size: 10px;
 }
@@ -58,7 +59,8 @@ body {
     outline: 1rem auto mediumseagreen;
 }
 
-/*boder top/bot marg wont change*/
+/*border top/bot marg doesn't change*/
+
 .profile-edit-btn {
     padding: 0 2rem;
     margin-left: 2rem;
@@ -92,40 +94,41 @@ body {
 }
 
 /*img gallery start*/
+
 /*scrolling problem*/
 .gallery {
-    margin: 1rem 1rem;
+    margin: 1rem;
+    padding: 1rem;
     border: 1rem solid black;
-    height: 125rem;
+    height: auto;
+    width: 38vw;
     display: grid;
-    grid-gap: 0.5rem;
-    grid-template-columns: repeat(3, 30rem);
-    grid-template-rows: repeat(2, 30rem);
+    grid-gap: 1rem;
     justify-content: center;
-    /*width: 50vw;*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 30rem);
+    
 }
 
 .gallery-item {
     justify-self: center;
-    margin: 1rem;
+    border-style: solid;
 }
 
 .gallery-image {
-    width: 20rem;
-    height: 20rem;
-    object-fit: cover;
     position: absolute;
+    width: 8.4%;
+    height: 32%;
+    object-fit: cover;
 }
-/*
-.gallery-image img {
-}
-*/
 
 .gallery-item-info li {
     display: inline-block;
     font-size: 2rem;
     position: relative;
     border-style: solid;
+    align-items: center;
+    justify-items: center;
 }
 
 .visually-hidden {
@@ -136,4 +139,18 @@ body {
     margin-inline-end: 2rem;
 }
 
+/*Media Section*/
 
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
