@@ -21,9 +21,9 @@ body {
 }
 
 .container {
-    max-width: 100vw;
+    max-width: 45vw;
     flex-grow: 1;
-    display: flex;
+    display: flexbox;
     justify-content: center;
 }
 
@@ -45,8 +45,13 @@ body {
 
 .profile-user-settings {
     display: flex;
-    margin-bottom: 3rem;
-    border-style: solid;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    transform: translate(-5rem, 0);
+    -webkit-transform: translate(-5rem, 0);
+    -moz-transform: translate(-5rem, 0);
+    -ms-transform: translate(-5rem, 0);
+    -o-transform: translate(-5rem, 0);
 }
 
 .btn {
@@ -62,8 +67,8 @@ body {
 /*border top/bot marg doesn't change*/
 
 .profile-edit-btn {
-    padding: 0 2rem;
-    margin-left: 2rem;
+    align-self: center;
+    padding: 0 1rem;
     align-items: center;
 }
 
@@ -79,7 +84,6 @@ body {
 }
 
 .profile-bio {
-    border-style: solid;
     margin-left: 35rem;
 }
 
@@ -113,26 +117,29 @@ body {
     justify-self: center;
     border-style: solid;
     display: flex;
-    width: 6.6vw;
+    width: 10vw;
 }
 
 .gallery-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-        position: relative;
+    position: relative;
 }
 
 .gallery-item-info {
     position: absolute;
+        transform: translate(50%, 50%);
+    -webkit-transform: translate(50%, 50%);
+    -moz-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    -o-transform: translate(50%, 50%);
 }
 
 .gallery-item-info li {
     display: inline-block;
     font-size: 2rem;
     border-style: solid;
-    align-items: center;
-    justify-items: center;
 }
 
 .visually-hidden {
@@ -143,7 +150,30 @@ body {
     margin-inline-end: 2rem;
 }
 
+/*Loader*/
+
+.loader {
+    width: 5rem;
+    height: 5rem;
+    border: 0.5rem solid #999;
+    border-bottom-color: transparent;
+    border-radius: 100%;
+    margin: 0 auto;
+    animation: loader 0.5s linear infinite;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    -webkit-animation: loader 0.5s linear infinite;
+}
+
 /*Media Section*/
+
+@keyframes loader {
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 @media screen and (max-width: 800px) {
     .column {
