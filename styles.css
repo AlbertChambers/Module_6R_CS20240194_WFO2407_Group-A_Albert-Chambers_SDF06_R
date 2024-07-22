@@ -149,12 +149,12 @@ body {
     -ms-transform: translate(-3vh, 6vw);
     -o-transform: translate(-3vh, 6vw);
     visibility: hidden;
-    opacity: 0;
 }
 
 .gallery-item:hover .gallery-item-info li {
     visibility: visible;
     opacity: 1;
+    color: #fafafa;
 }
 
 .gallery-item:hover .gallery-image {
