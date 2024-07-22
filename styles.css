@@ -21,11 +21,18 @@ body {
 }
 
 .container {
-    max-width: 45vw;
+    max-width: 50vw;
     flex-grow: 1;
     display: flexbox;
-    justify-content: center;
+    border-style: solid;
+    transform: translate(50%, 0%);
+    -webkit-transform: translate(50%, 0%);
+    -moz-transform: translate(50%, 0%);
+    -ms-transform: translate(50%, 0%);
+    -o-transform: translate(50%, 0%);
 }
+
+/*Profile Header*/
 
 .profile-image {
     float: left;
@@ -36,7 +43,7 @@ body {
 .profile-image img {
     margin-right: 5rem;
     border-radius: 100%;
-    border: 1rem solid mediumseagreen;
+    border: 1rem solid green;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
@@ -47,11 +54,11 @@ body {
     display: flex;
     margin-bottom: 1rem;
     justify-content: space-between;
-    transform: translate(-5rem, 0);
-    -webkit-transform: translate(-5rem, 0);
-    -moz-transform: translate(-5rem, 0);
-    -ms-transform: translate(-5rem, 0);
-    -o-transform: translate(-5rem, 0);
+    transform: translate(-10%);
+    -webkit-transform: translate(-10%);
+    -moz-transform: translate(-10%);
+    -ms-transform: translate(-10%);
+    -o-transform: translate(-10%);
 }
 
 .btn {
@@ -61,10 +68,8 @@ body {
 }
 
 .btn:active {
-    outline: 1rem auto mediumseagreen;
+    outline: 1rem auto green;
 }
-
-/*border top/bot marg doesn't change*/
 
 .profile-edit-btn {
     align-self: center;
@@ -85,16 +90,17 @@ body {
 
 .profile-bio {
     margin-left: 35rem;
+    width: 61rem;
+}
+
+.profile-real-name {
+    font-weight: bold
 }
 
 .profile-user-settings,
 .profile-stats,
 .profile-bio {
     padding: 1rem;
-}
-
-.profile-real-name {
-    font-weight: bold
 }
 
 /*img gallery start*/
